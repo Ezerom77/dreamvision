@@ -1,5 +1,5 @@
 import { groq } from "next-sanity";
-import { readClient } from "./lib/client";
+import { readClient, writeClient } from "./lib/client";
 import { buildQuery } from "./utils";
 
 interface GetResoucesParams {
@@ -51,6 +51,33 @@ export const getResources = async (params: GetResoucesParams) => {
       }`
     );
     return resources;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const writeMessage = async (data: any) => {
+  try {
+    const message = await writeClient.create({
+      _type: "message",
+      ...data,
+    });
+
+    return message;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const createUsers = async (data: any) => {
+  try {
+    const user = await writeClient.create({
+      _type: "user",
+
+      ...data,
+    });
+
+    return user;
   } catch (error) {
     console.log(error);
   }

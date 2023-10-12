@@ -16,15 +16,14 @@ const Navbar = () => {
           className="block md:hidden"
         />
         <ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
-          {/* <li className=" body-text !font-normal">
-              <Link href="https://ezerom.com.ar/galeria/" target="_blank">
-                Gallery
-              </Link>
-            </li> */}
           <li className=" body-text text-gradient_blue-purple !font-bold">
-            <Link href="https://ezerom.com.ar/contact/" target="_blank">
-              Contact Us
-            </Link>
+            <Link href="access">EARLY ACCESS</Link>
+          </li>
+          <li className=" body-text !font-normal">
+            <Link href="/about">About Us</Link>
+          </li>
+          <li className=" body-text text-gradient_blue-purple !font-bold">
+            <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>
