@@ -20,11 +20,6 @@ const schema = {
       title: "User created at",
       type: "datetime",
     },
-    {
-      name: "updatedAt",
-      title: "User updated at",
-      type: "datetime",
-    },
   ],
 };
 

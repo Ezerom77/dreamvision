@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import { writeMessage } from "../sanity/actions";
+import { useRouter } from "next/navigation";
 
 const ContactForm: React.FC = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,8 +23,9 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a un servidor.
-    console.log(formData);
+    const newMessage = formData;
+    writeMessage(newMessage);
+    router.push("/contact/thanks");
   };
 
   return (

@@ -28,7 +28,7 @@ const ModalForm: React.FC = () => {
     <div>
       <button
         onClick={openModal}
-        className="bg-gray-800 text-white font-bold py-2 px-4 rounded transition duration-300 hover:bg-gray-700 "
+        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 mt-4"
       >
         Join Now
       </button>

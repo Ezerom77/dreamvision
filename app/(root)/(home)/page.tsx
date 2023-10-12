@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import ResourceCard from "@/components/ResourceCard";
 import SearchForm from "@/components/SearchForm";
 import { getResources, getResourcesPlaylist } from "@/sanity/actions";
+import More from "@/components/More";
 
 export const revalidate = 900;
 
@@ -79,6 +80,11 @@ const Page = async ({ searchParams }: Props) => {
           </div>
         </section>
       ))}
+      <section className="nav-padding w-full">
+        <div className=" min-h-[274px]  w-full rounded-xl ">
+          <More />
+        </div>
+      </section>
     </main>
   );
 };

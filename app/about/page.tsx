@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <div className="container pt-32 ">
+    <div className="container pt-32 pb-5 ">
       <h1 className="text-3xl font-bold text-center mb-4">
         Crafting Dreams with AI Memories
       </h1>

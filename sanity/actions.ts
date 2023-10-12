@@ -60,6 +60,7 @@ export const writeMessage = async (data: any) => {
   try {
     const message = await writeClient.create({
       _type: "message",
+      createdAt: new Date().toISOString(),
       ...data,
     });
 
@@ -73,7 +74,7 @@ export const createUsers = async (data: any) => {
   try {
     const user = await writeClient.create({
       _type: "user",
-
+      createdAt: new Date().toISOString(),
       ...data,
     });
 
