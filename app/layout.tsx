@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   other: {
     "theme-color": "#0d1117",
     "color-scheme": "dark only",
+    "twitter:card": "summary_large_image",
+    "twitter:creator": "@ezerom77",
+    "twitter:title": "DreamVisions",
+    "twitter:description": "AI-Powered Virtual Memory Creation",
+    // "twitter:image": "/images/og.png",
+    // "og:image": "/images/og.png",
   },
 };
 

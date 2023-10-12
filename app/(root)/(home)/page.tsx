@@ -23,7 +23,9 @@ const Page = async ({ searchParams }: Props) => {
     <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
       <section className="nav-padding w-full">
         <div className=" relative min-h-[274px] p-5 w-full flex-col rounded-xl bg-banner bg-cover bg-center ">
-          <h1 className="sm:heading1 heading2  text-white  ">DreamVisions:</h1>
+          <h1 className="sm:heading1 xs:heading3 heading4 text-white  ">
+            DreamVisions:
+          </h1>
           <p className="sm:heading3 heading5  text-white">
             AI-Powered Virtual Memory Creation
           </p>
