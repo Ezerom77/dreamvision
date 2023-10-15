@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "DreamVisions",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-black-100 font-poppins">
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
